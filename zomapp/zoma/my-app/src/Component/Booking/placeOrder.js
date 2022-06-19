@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import './placeOrder.css'
 import Header from '../../header'
 
-const url = "http://localhost:9705/menuItem";
-const purl = "http://localhost:9705/placeOrder";
+const url = "https://restapiiiiii.herokuapp.com/menuItem";
+const purl = "https://restapiiiiii.herokuapp.com/placeOrder";
 
 class PlaceOrder extends Component {
     constructor(props){

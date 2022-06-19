@@ -92,9 +92,9 @@ app.get('/filters/:mealId', (req, res) => {
 
 //restaurantDetails
 app.get('/details/:id', (req, res) => {
-    //let restId = Number(req.params.id);
-    let restId = mongo.ObjectId(req.params.id)
-    db.collection('reasturant').find({ _id: restId }).toArray((err, result) => {
+    let restId = Number(req.params.id);
+    // let restId = mongo.ObjectId(req.params.id)
+    db.collection('reasturant').find({restaurant_id: restId }).toArray((err, result) => {
         if (err) throw err;
         res.send(result)
     })
