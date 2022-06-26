@@ -1,0 +1,343 @@
+https://code.visualstudio.com/ >> install
+https://github.com/ >> create account
+https://github.com/Aakashdeveloper > Follow
+https://git-scm.com/downloads > install
+https://stackoverflow.com/ >> create account
+https://www.linkedin.com/ >> create account
+https://quora.com/ >> create account
+https://nodejs.org/en/ >> install
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+https://www.postman.com/downloads/
+
+HTML >>> Static (Structure)
+CSS >>> Design 
+BootStrap
+JavaScript
+NodeJs
+MongoDb
+Express
+React
+
+/*****/
+Heroku
+Gitpages
+Netlify
+
+/*******/
+Redis
+Postgress
+
+////////
+Zomato  > Firstapp
+? > Second App
+
+
+3 project 
+> zomato  > Firstapp
+> ?  > Second App
+> profile
+many subtask
+
+
+html> main (hyper text markup language)
+head (contains all the link (css,javascript))
+body (contains all the content visible to user)
+
+////////
+block level
+> those which start from the new line
+> p div h1
+
+inline
+> that start in the same line
+> span a img
+
+https://imgbb.com/
+https://maps.google.com/
+
+////////
+design
+
+> inline
+> styletag
+> stylesheet
+
+inline>styletag>stylesheet
+
+div
+stylesheet{
+    text-align:right;
+    font-size:40px 
+    border:2px solid red;
+    background-color:orange
+}
+
+inline{
+   color:red;
+   font-size:30px;
+}
+
+styletag{
+    color:orange;
+    text-align:center;
+    font-weight:bold
+}
+
+
+
+{
+   color:red;
+   font-size:30px;
+   text-align:center;
+   font-weight:bold
+   border:2px solid red;
+   background-color:orange
+}
+
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+////////
+tagname> h1, p, a
+id(#) > to target unique element
+class(.) > to target multiple element
+
+////////
+border:10px double green;
+solid
+dotted
+double
+groove
+dashed
+
+//////////
+Grid basic
+////////
+bootstrap3
+
+xs < 768px
+sm > 768px
+md > 992px
+lg > 1200px
+
+bootstrap4
+col- >576px
+sm < 576px
+md < 768px
+lg < 992px
+xl < 1200px
+
+
+bootstrap5
+col- >576px
+sm < 576px
+md < 768px
+lg < 992px
+xl < 1200px
+xxl < 1400px
+
+
+
+https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.989184&lon=77.0342729&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
+
+
+///
+NodeJs
+/////
+NodeJs is single thread, async, non blocking I/O
+
+Open source
+
+package.json
+> entry point to our application
+> meta data (description, version, name)
+> cmd (start, test)
+> packages info
+
+//////////////////////
+how to generate package.json
+/////////////////
+> go inside the folder using cmd/terminal
+> npm init
+> answer all question
+> type "yes"
+
+//////////////////////
+step to install package
+/////////////////
+> go inside the folder using cmd/terminal
+> npm i packagename
+
+//////////////////////
+step to install global package
+/////////////////
+#window
+> open the cmd as adminstrator
+> npm i -g packageName
+
+#mac/linux
+> open terminal
+> sudo npm i -g packageName
+
+////////CRUD///////
+C > create (insert)
+R > Read   (Get)
+U > Update (Put)
+D > Delete (Delete)
+
+
+
+params
+> pass after / in url
+> complusory to define
+> should be use when we have to only pass 1  values
+
+QueryParams
+> pass after ? in url
+> no need to define
+> should be use when we have to only pass more than 1 values
+
+
+/////////////
+/******GetAllUser*****/
+(GET)> https://developerjwt.herokuapp.com/api/auth/users
+
+/******Register*****/
+(POST)> https://developerjwt.herokuapp.com/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","phone":343432,role?":"user"}
+
+/******Login*****/
+(POST) => https://developerjwt.herokuapp.com/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,token:'dgsdg'}
+
+/******UserInfo*****/
+(GET) => https://developerjwt.herokuapp.com/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+
+
+////////React > Frontend 
+> React is lib/framework which help to build single page application(SPA)
+using component based structure
+
+////step to generate react app
+#window
+**** One Time Step ****
+> open cmd as admin
+> npm i -g create-react-app
+
+**** Next All Time You Need New App ****
+> open cmd
+> navigate to folder where you want app
+> create-react-app appname
+
+#mac/linux
+**** One Time Step ****
+> open terminal
+> sudo npm i -g create-react-app
+
+**** Next All Time You Need New App ****
+> open terminal
+> navigate to folder where you want app
+> create-react-app appname
+
+//////////
+**** All Time You Need New App ****
+> open cmd/terminal
+> navigate to folder where you want app
+> npx create-react-app appname
+
+component
+# functional
+> Dumb component
+> Mainly use for the purpose of display
+> Cannot maintain the state
+
+# class
+> Logical component
+> Use for logics as well as display
+> Can maintain the state
+
+
+> hooks
+
+////https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
+
+state
+> State act a local variable inside the component
+> Each component can have its own state
+> We can update the value of state
+> Any data interaction will happen through state only
+
+props
+> Help to transfer the data between 2 nested component
+> We cannot update the value of props
+
+
+parent => child (props)
+child => parent (props with function)
+
+///default props
+history > redirection
+location > for query params
+match > Params
+
+npm i react-router-dom@5.3.0
+
+/////////
+npm i -g heroku
+
+
+(get) cityname >           https://zomatoajulypi.herokuapp.com/location
+(get) restwrtcity >        https://zomatoajulypi.herokuapp.com/restaurant?stateId=1
+(get) quickSearch>         https://zomatoajulypi.herokuapp.com/quicksearch
+
+
+(get) onbasisofMeal >      https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id=
+(get) cuisinefilter >      https://zomatoajulypi.herokuapp.com/filter/4?cuisine=1
+(get) costfilter >         https://zomatoajulypi.herokuapp.com/filter/1?hcost=1000&lcost=500
+
+(get) restdetails >       http://zomatoajulypi.herokuapp.com/details/1
+(get) menu >               https://zomatoajulypi.herokuapp.com/menu/1
+
+(post) orderspage >        http://zomatoajulypi.herokuapp.com/menuItem
+                           body [1,4,5]
+(post)placeOrder >  
+
+(get) allorder>            
+       
+(get) restaurants>         https://zomatoajulypi.herokuapp.com/restaurants
+
+
+/////////
+(GET)> http://localhost:5000/api/auth/users
+
+/******Register*****/
+(POST)> http://localhost:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","phone":343432,role?":"user"}
+
+/******Login*****/
+(POST) => http://localhost:5000/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,token:'dgsdg'}
+
+/******UserInfo*****/
+(GET) => http://localhost:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+
+https://dashboard.paytm.com/
+
+https://developerpayment.herokuapp.com/paynow
+
+
+////////for react Deploymenent
+> Node Api For Data Live
+> Login api Live
+> Payment Gateway Live
+
+> Run>  npm run build
+
+https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
+
+
+https://docs.mapbox.com/mapbox-gl-js/example/
+"mapbox-gl": "^2.7.1",

@@ -1,0 +1,146 @@
+#window
+> https://www.mongodb.com/try/download/community
+> install
+> in c drive make one folder by name of data
+> c\data
+> inside date make db
+> c\data\db
+
+> open 2 cmd 
+>> in First cmd
+>> go inside bin folder
+c/program file/mongodb/server/5.0/bin
+>> mongod (this will start new mongodb server on port 27017)
+
+>> open second cmd
+>> go inside bin folder
+c/program file/mongodb/server/5.0/bin
+>> mongo
+
+
+////////Mac/Linux
+> https://www.mongodb.com/try/download/community
+> install
+> open terminal on root
+> type mkdir data/db
+
+
+> open 2 terminal 
+>> in First terminal
+>> mongod --dbpath data/db
+
+>> open second terminal
+>> mongo
+
+////live setup
+> https://www.mongodb.com/atlas
+> sign up with gmail
+
+///////
+>> click > create > shared > aws > city > M0 sandbox
+> create cluster
+
+>> database access > Add new database user
+> user and password (test , test123) > Atlas Admin > Add User
+
+>> Network Access > Add Ip Address >
+> Access List Entry(0.0.0.0/0)
+> Comment : Anything > Confirm
+
+/////////////////////////////////////////
+
+RollNo | Hindi | English
+  1    | 80    |         |
+  2    |       |     67  |
+  3    | 76    |         |
+
+[
+    {
+        rollNo: 1,
+        Hindi: 80
+    },
+    {
+        rollNo: 2,
+        English: 67
+    },
+    {
+        rollNo: 3,
+        Hindi: 76
+    }
+]
+
+SQL       NoSql
+Database  Database
+Table     Collection
+Row       Document  
+Select    Find
+insert    insert
+Update    Update
+Delete    Remove
+
+///////Step to see all database///////
+show dbs
+
+///////Step to create database///////
+use dbname
+
+> show collections
+
+db.CollectionName.insert()
+
+db.user.insert({name:"John"})
+
+db.user.find()
+
+// find with condition
+db.zomato.find({state_id:4})
+
+db.zomato.find({'mealTypes.mealtype_id':1})
+
+/////
+
+db.menu.find({menu_id:{$in:[24,32,16]}}).pretty()
+
+/////Delete
+
+//delete all the records
+db.CollectionName.remove({})
+
+//delete particular record
+db.CollectionName.remove({})
+
+db.orders.remove({"_id":"62514d42f5aec503b2e0f2a9"})
+
+db.orders.remove({"phone":97876733})
+
+
+////update 
+db.orders.updateOne(
+    {_id:"62514d77f5aec503b2e0f2ab"},
+    {
+        $set:{
+            "status":"Delivered"
+            "bank":"SBI"
+        }
+    }
+)
+
+
+db.orders.updateOne(
+    {_id:"62514d77f5aec503b2e0f2ab"},
+    {
+        $set:{
+            "bank":"SBI"
+        }
+    }
+)
+
+
+db.orders.updateOne(
+    {_id:"62514d77f5aec503b2e0f2ab"},
+    {
+        $unset:{
+            "address":"",
+        }
+    }
+)
